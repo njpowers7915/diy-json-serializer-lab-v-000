@@ -5,7 +5,7 @@ class ProductSerializer < ActiveRecord::Base
     serialized_product = '{'
 
     serialized_post += '"id": ' + post.id.to_s + ', '
-    serialized_post += '"title": "' + post.title + '", '
+    serialized_post += '"name": "' + post.title + '", '
     serialized_post += '"description": "' + post.description + '", '
 
     # the author association can also be represented in JSON
