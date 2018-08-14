@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
   def data
     @product = Product.find(params[:id])
     render json: ProductSerializer.serialize(@product)
+    redirect_to @product
   end
 
   def index
