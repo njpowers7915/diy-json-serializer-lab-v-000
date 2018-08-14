@@ -1,8 +1,8 @@
 class ProductSerializer < ActiveRecord::Base
-  def self.serialize(product) 
+  def self.serialize(product)
 
     # start with the open brace to create a valid JSON object
-    serialized_post = '{'
+    serialized_product = '{'
 
     serialized_post += '"id": ' + post.id.to_s + ', '
     serialized_post += '"title": "' + post.title + '", '
