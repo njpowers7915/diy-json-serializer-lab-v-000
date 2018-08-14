@@ -4,13 +4,10 @@ class ProductSerializer < ActiveRecord::Base
     # start with the open brace to create a valid JSON object
     serialized_product = '{'
 
-    serialized_post += '"id": ' + post.id.to_s + ', '
-    serialized_post += '"name": "' + post.title + '", '
-    serialized_post += '"description": "' + post.description + '", '
-
-    # the author association can also be represented in JSON
-    serialized_post += '"author": {'
-    serialized_post += '"name": "' + post.author.name + '"}'
+    serialized_product += '"id": ' + post.id.to_s + ', '
+    serialized_product += '"name": "' + post.title + '", '
+    serialized_product += '"price": "' + post.title + '", '
+    serialized_product += '"inventory": "' + post.author.name + '"}'
 
     # and end with the close brace
     serialized_post += '}'
