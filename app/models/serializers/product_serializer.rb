@@ -11,7 +11,7 @@ class ProductSerializer < ActiveRecord::Base
     serialized_product += '"description": "' + post.author.name + '"}'
 
     # and end with the close brace
-    serialized_post += '}'
+    serialized_product += '}'
   end
 
 end
