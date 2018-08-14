@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+
+  require ProductSerializer
+  
   def data
     product = Product.find(params[:id])
     render json: ProductSerializer.serialize(product)
