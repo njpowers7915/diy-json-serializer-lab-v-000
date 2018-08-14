@@ -1,4 +1,4 @@
-class ProductSerializer < ActiveRecord::Base
+class ProductSerializer
   def self.serialize(product)
 
     # start with the open brace to create a valid JSON object
