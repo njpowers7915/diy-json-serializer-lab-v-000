@@ -7,7 +7,8 @@ class ProductSerializer < ActiveRecord::Base
     serialized_product += '"id": ' + post.id.to_s + ', '
     serialized_product += '"name": "' + post.title + '", '
     serialized_product += '"price": "' + post.title + '", '
-    serialized_product += '"inventory": "' + post.author.name + '"}'
+    serialized_product += '"inventory": "' + post.title + '", '
+    serialized_product += '"description": "' + post.author.name + '"}'
 
     # and end with the close brace
     serialized_post += '}'
