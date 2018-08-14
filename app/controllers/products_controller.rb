@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def data
-    @product = Product.find(params[:id])
+    @product = Product.find(product_params)
     render json: ProductSerializer.serialize(@product)
   end
 
